@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Restaurant - Fine Italian Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Family Restaurant</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#reservations" class="nav-link">Reservations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#follow" class="nav-link">Follow Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="fade-in">Welcome to Family Restaurant</h1>
+                <p class="fade-in-delay">Experience authentic Italian cuisine in an elegant atmosphere</p>
+                <div class="hero-buttons fade-in-delay-2">
+                    <a href="#reservations" class="btn btn-primary">Make Reservation</a>
+                    <a href="#menu" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Family Restaurant</h2>
+                <p>Bringing authentic Italian flavors to your table since 1985</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Nestled in the heart of the city, Bella Vista has been serving exceptional Italian cuisine for over three decades. Our passion for authentic flavors, fresh ingredients, and warm hospitality has made us a beloved destination for food enthusiasts.</p>
+                    <p>Our experienced chefs bring traditional Italian cooking techniques combined with modern culinary innovation, creating unforgettable dining experiences for our guests.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h4>Authentic Recipes</h4>
+                                <p>Traditional Italian recipes passed down through generations</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Locally sourced and imported premium ingredients</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Warm Atmosphere</h4>
+                                <p>Elegant dining environment perfect for any occasion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our selection of authentic Italian dishes</p>
+            </div>
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="antipasti">Antipasti</button>
+                <button class="filter-btn" data-filter="pasta">Pasta & Risotto</button>
+                <button class="filter-btn" data-filter="dolci">Dolci</button>
+            </div>
+            <div class="menu-categories">
+                <div class="menu-category" data-category="antipasti">
+                    <h3>Antipasti</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Bruschetta Classica</h4>
+                                <p>Toasted bread with fresh tomatoes, basil, and garlic</p>
+                            </div>
+                            <span class="price">$12</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Antipasto Misto</h4>
+                                <p>Selection of cured meats, cheeses, and marinated vegetables</p>
+                            </div>
+                            <span class="price">$18</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Carpaccio di Manzo</h4>
+                                <p>Thinly sliced beef with arugula, capers, and parmesan</p>
+                            </div>
+                            <span class="price">$16</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" data-category="pasta">
+                    <h3>Pasta & Risotto</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Spaghetti Carbonara</h4>
+                                <p>Classic Roman pasta with eggs, pecorino cheese, and pancetta</p>
+                            </div>
+                            <span class="price">$22</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Risotto ai Funghi Porcini</h4>
+                                <p>Creamy risotto with porcini mushrooms and truffle oil</p>
+                            </div>
+                            <span class="price">$26</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Osso Buco alla Milanese</h4>
+                                <p>Braised veal shanks with saffron risotto</p>
+                            </div>
+                            <span class="price">$34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" data-category="dolci">
+                    <h3>Dolci</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Tiramisu</h4>
+                                <p>Classic Italian dessert with espresso and mascarpone</p>
+                            </div>
+                            <span class="price">$9</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Panna Cotta</h4>
+                                <p>Silky vanilla custard with berry compote</p>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cannoli Siciliani</h4>
+                                <p>Crispy pastry shells filled with sweet ricotta cream</p>
+                            </div>
+                            <span class="price">$10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Make a Reservation</h2>
+                <p>Book your table for an unforgettable dining experience</p>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>Reserve Your Table</h3>
+                    <p>We recommend making reservations in advance, especially for weekend dining. Our team will ensure you have the perfect table for your special occasion.</p>
+                    <div class="reservation-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                                Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                                Sunday: 4:00 PM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>reservations@bellavista.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="special">Special Requests</label>
+                            <textarea id="special" name="special" rows="3" placeholder="Anniversary, birthday, dietary restrictions, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Gourmet Street<br>Downtown District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@familyrestaurant.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Thu: 5:00 PM - 10:00 PM<br>
+                            Fri-Sat: 5:00 PM - 11:00 PM<br>
+                            Sun: 4:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow Us Section -->
+    <section id="follow" class="follow">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Us</h2>
+                <p>Stay connected and follow our culinary journey</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link" data-platform="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link" data-platform="instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link" data-platform="twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link" data-platform="youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="#" class="social-link" data-platform="tripadvisor">
+                    <i class="fab fa-tripadvisor"></i>
+                    <span>TripAdvisor</span>
+                </a>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates on special events and seasonal menus</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Family Restaurant</h3>
+                    <p>Experience authentic Italian cuisine in an elegant atmosphere. Our passion for exceptional food and warm hospitality makes every visit memorable.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@familyrestaurant.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Thursday: 5:00 PM - 10:00 PM</li>
+                        <li>Friday - Saturday: 5:00 PM - 11:00 PM</li>
+                        <li>Sunday: 4:00 PM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Family Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Messages -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
